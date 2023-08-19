@@ -57,3 +57,4 @@ Route::get('/tags/show', [TagsController::class, "showTags"])
 ->name('tags.show');
 
 Route::get('/tags/show/{id}', [TagsController::class, "showData"]);
+Route::get('/post1', [PostController::class, "postWithOneCat"]);

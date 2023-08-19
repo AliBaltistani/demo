@@ -46,4 +46,8 @@ class PostController extends Controller
        return $post;
       
   }
+
+  public function postWithOneCat(){
+    return Post::with('postWithCAte')->get();
+  }
 }
